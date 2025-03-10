@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --cor-primaria: #0a0b0d;
+    --cor-secundaria: #91c4d9;
+    --cor-terciaria: hsl(203, 100%, 60%);
+    --cor-hover: #4a738c;
+    --cor-header-footer: hwb(209 13% 82%);
+
+    --fonte-primaria: "Fira Code", monospace;
+    --fonte-secundaria: "Roboto Condensed", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    color: var(--cor-terciaria);
+}
+
+.eu {
+    object-fit: cover;
+    height: 294px;
+    width: auto;
+    border-radius: 3rem;
+    filter: drop-shadow(0 0 0.5rem var(--cor-terciaria));
+}
+
+header {
+    background-color: var(--cor-header-footer);
+    padding: 2rem 3rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+    margin: 3rem 0.5rem 0.5rem 0.5rem;
+    background-color: var(--cor-header-footer);
+    border-radius: 0.5rem;
+}
+
+.footer__txt {
+    color: var(--cor-terciaria);
+}
+
+h1 {
+    font-family: var(--fonte-primaria);
+    font-size: 5rem;
+    color: var(--cor-terciaria);
+}
+
+h2 {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+h3 {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+h4 {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+h5 {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+p {
+    color: var(--cor-secundaria);
+    font-size: 1.25rem;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+
+    :hover {
+        color: var(--cor-hover);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre {
+    display: flex;
+    gap: 5rem;
+    margin: 5rem 15rem 2rem 15rem;
+}
+
+/* .formacao{
+    display: flex;
+    margin: 5rem 10rem 0rem 15rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 2rem;
+    width: 20rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.formacao__link{
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+} */
+
+.sobre__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sobre__info__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.sobre__info__detalhes {
+    display: flex;
+    gap: 6rem;
+}
+
+.sobre__info__detalhes__redes {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 2rem;
+    padding: 1.75rem 1rem;
+    justify-content: center;
+    height: 4rem;
+}
+
+.icon__link {
+    height: 3.5rem;
+}
+
+.link {
+    :hover {
+        filter: drop-shadow(0 0 0.5rem var(--cor-terciaria));
+    }
+}
+
+.sobre__mim {
+    display: flex;
+    gap: 3rem;
+    margin: 5rem 15rem 2rem 15rem;
+}
+
+.sobre__mim__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sobre__mim__hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sobre__mim__hobbies__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sobre__mim__objetivo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container__formacoes {
+    display: flex;
+    flex-direction: column;
+    min-height: 57vh;
+    margin: 5rem 15rem 2rem 15rem;
+    gap: 3rem;
+}
+
+.formacoes__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
